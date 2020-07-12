@@ -32,4 +32,12 @@ void leer(int n, int m[], char esc[][N][N], char nom[][N])
 	}
 }
 
+void mostrarEscuelas(int n, int m[], char esc[][N][N], char nom[][N])
+{
+	for(int i=0;i<n;i++)
+	{
+		cout<<"Facultad de "<<nom[i]<<" tiene "<<m[i]<<" escuelas\n";
+	}
+}
+
 
