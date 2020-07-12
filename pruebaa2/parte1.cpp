@@ -32,4 +32,16 @@ void leer(int n, int m[], char esc[][N][N], char nom[][N])
 	}
 }
 
+void mostrar(int n, int m[], char esc[][N][N], char nom[][N])
+{
+	for(int i=0;i<n;i++)
+	{
+		cout<<"Escuelas de la facultad de "<<nom[i]<<":"<<endl<<endl;
+		for(int j=0;j<m[i];j++)
+		{
+			cout<<esc[i][j]<<endl;;
+		}
+		cout<<"------------------------------------------------\n";
+	}
+}
 
