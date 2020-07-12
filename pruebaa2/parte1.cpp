@@ -33,3 +33,25 @@ void leer(int n, int m[], char esc[][N][N], char nom[][N])
 }
 
 
+
+void mayorEscuelas(int n, int m[], char esc[][N][N], char nom[][N])
+{
+	char fm[N];
+	int may=-1;
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<m[i];i++)
+		{
+			if(may<m[i])
+			{
+				may=m[i];
+				strcpy(fm,nom[i]);
+			}
+		}
+	}
+	cout<<"Facultad con mayor # de facultades es "<<fm<<
+	" con "<<may<<" facultades\n";
+}
+
+
+
